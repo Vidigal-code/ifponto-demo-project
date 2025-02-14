@@ -19,6 +19,7 @@ Este é um **projeto demonstrativo** de um sistema baseado no IFPonto, desenvolv
 ![GIF *Atualizar informações](https://github.com/Vidigal-code/ifponto-demo-project/blob/main/assets/example-project-image/images/pt/SETTINGS-%20PT.png?raw=true)
 
 - **Painel Admin**: Interface de administração que possibilita o gerenciamento de usuários e dados do sistema.
+
 Este projeto demonstra como essas funcionalidades são implementadas de forma integrada utilizando **PHP**, **PDO** e **OOP**
 
 ## Tecnologias Utilizadas:
