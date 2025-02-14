@@ -9,7 +9,7 @@ Este é um **projeto demonstrativo** de um sistema baseado no IFPonto, desenvolv
 
 
   
-- **Verificação de conta**: Processo de validação de credenciais para garantir o acesso correto.
+**Verificação de conta**: Processo de validação de credenciais para garantir o acesso correto.
 ![GIF Verificação](https://github.com/Vidigal-code/ifponto-demo-project/blob/main/assets/example-project-image/images/pt/VEFIFYACCOUNT%20-%20PT.png?raw=true)
 
 
