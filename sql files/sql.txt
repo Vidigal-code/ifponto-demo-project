@@ -1,0 +1,82 @@
+
+
+login: vidigal@gmail.com -> Admin
+password: Kauan2025!!
+
+
+login: fernando.oliveira@gmail.com -> User
+password: Fernado2025!!
+
+
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `rg` varchar(20) NOT NULL,
+  `lang` varchar(50) DEFAULT NULL,
+  `role` varchar(50) DEFAULT 'user',
+  `business` varchar(100) DEFAULT NULL,
+  `is_an_admin` tinyint(1) DEFAULT '0',
+  `salary` decimal(10,2) DEFAULT NULL,
+  `period` varchar(50) DEFAULT NULL,
+  `work_entry` datetime DEFAULT NULL,
+  `work_exit` datetime DEFAULT NULL,
+  `approved_account` tinyint(1) DEFAULT '0',
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `cpf` (`cpf`),
+  UNIQUE KEY `rg` (`rg`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `confirm_point_entry` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `rg` varchar(20) NOT NULL,
+  `lang` varchar(50) DEFAULT NULL,
+  `role` varchar(50) DEFAULT 'user',
+  `business` varchar(100) DEFAULT NULL,
+  `is_an_admin` tinyint(1) DEFAULT '0',
+  `salary` decimal(10,2) DEFAULT NULL,
+  `period` varchar(50) DEFAULT NULL,
+  `work_entry` datetime DEFAULT NULL,
+  `status` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `confirm_point_entry_code` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `confirm_point_exit` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `rg` varchar(20) NOT NULL,
+  `lang` varchar(50) DEFAULT NULL,
+  `role` varchar(50) DEFAULT 'user',
+  `business` varchar(100) DEFAULT NULL,
+  `is_an_admin` tinyint(1) DEFAULT '0',
+  `salary` decimal(10,2) DEFAULT NULL,
+  `period` varchar(50) DEFAULT NULL,
+  `work_exit` datetime DEFAULT NULL,
+  `status` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `confirm_point_exit_code` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+
+
