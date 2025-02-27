@@ -1,6 +1,8 @@
 # Projeto Demo IFPonto: Desenvolvendo com PHP, PDO e OOP
 
-Este é um **projeto demonstrativo** de um sistema baseado no IFPonto, desenvolvido com as tecnologias **PHP**, **PDO (PHP Data Objects)** e **Programação Orientada a Objetos (OOP)**.
+**Este é um projeto educacional** focado em **PHP**, **PDO (PHP Data Objects)** e **Programação Orientada a Objetos (POO)**. O sistema foi desenvolvido com o objetivo de demonstrar e testar habilidades nessas tecnologias. A ideia é aplicar conceitos de forma prática, criando um ambiente de aprendizado sobre como trabalhar com banco de dados e estrutura de código orientada a objetos.
+
+Fique à vontade para modificar ou aprimorar o projeto da maneira que desejar, sempre visando a melhoria do aprendizado!
 
 ## Funcionalidades do Sistema:
 - **Login**: Permite que os usuários acessem o sistema com suas credenciais.
